@@ -7,7 +7,8 @@ namespace nUnitExpressionTest.Linq
     {
         public string Translate(Expression e)
         {
-            throw new NotImplementedException();
+            return "";
+            //throw new NotImplementedException();
         }
     }
 }

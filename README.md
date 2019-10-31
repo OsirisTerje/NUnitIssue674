@@ -172,6 +172,7 @@ This package contains the necessary Visual Studio integration components for Wor
 
 ![Shows how certain tests can not be run](TestFailure.PNG "Shows how certain tests can not be run")
 ![Shows how certain tests can not be run](TestFailure2.PNG "Shows how certain tests can not be run")
+![Shows how certain tests can not be run](TestFailure3.PNG "Shows how certain tests can not be run")
 
 
 ```

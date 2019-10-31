@@ -1,10 +1,24 @@
 # nUnitExpressionTest
+
+## Nunit Test Adapter 3.15
 This repository shows nUnit's failure to properly run certain tests. Test
 failures are expected as the tested items are not fully implemented. The
 problem is the "not run" tests. If "Run All" is selected, the nUnit will run no
 tests. If you run tests selectively you can get them to run individually. Noted
-below is an example output log from running the tests in Visual Studio. The
-images and log message are from:
+below is an example output log from running the tests in Visual Studio.
+
+## NUnit Test Adapter 3.16-dev
+With the dev version of the test adapter, the individual project test worked
+fine properly finding all test cases and running them to completion. However,
+When I added multiple test projects to the solution, the last test project
+(alphabetically) would get skipped. If I manually remove one of the two test
+projects from the solution, the remaining test runs properly.
+
+Also to note, running the tests in VS 2017 works perfectly fine.
+
+
+## Environment Details
+The images and log message are from:
 
 ```
 Microsoft Visual Studio Professional 2019
@@ -169,12 +183,22 @@ Workflow Manager Tools 1.0   1.0
 This package contains the necessary Visual Studio integration components for Workflow Manager.
 ```
 
+Errors showing how certain tests are skipped with Test adapter version 3.15
 
 ![Shows how certain tests can not be run](TestFailure.PNG "Shows how certain tests can not be run")
 ![Shows how certain tests can not be run](TestFailure2.PNG "Shows how certain tests can not be run")
+
+Shows how when multiple projects are run, one of the projects is skipped using
+TestAdapter 3.16-dev.
+
 ![Shows how certain tests can not be run](TestFailure3.PNG "Shows how certain tests can not be run")
 
+Shows how when multiple projects are run, all tests are run in Visual Studio
+2017 when also using TestAdapter 3.16-dev.
 
+![Shows how all tests are run in VS 2017 TA 3.16-dev](TestSuccess2017.PNG "Shows how all tests are run in VS 2017 TA 3.16-dev")
+
+## Test Adapter 3.15 Log
 ```
 [9/17/2019 1:56:03.089 PM Diagnostic] Enqueue operation 'RunSelectedOperation', hashcode:14796038 
 [9/17/2019 1:56:03.089 PM Diagnostic] Operation left in the the queue: 1

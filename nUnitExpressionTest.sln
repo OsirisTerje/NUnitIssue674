@@ -17,6 +17,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1C4EEF08-769B-4EF6-BC9A-70879E74C072}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		simple.runsettings = simple.runsettings
 	EndProjectSection
 EndProject
 Global

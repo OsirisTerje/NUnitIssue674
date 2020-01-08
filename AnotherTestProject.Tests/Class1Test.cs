@@ -11,4 +11,13 @@ namespace AnotherTestProject.Tests
             return new Class1().SomeFunction(i);
         }
     }
+
+    public class WhateverTest
+    {
+        [Test]
+        public void JustChecking()
+        {
+            Assert.Pass();
+        }
+    }
 }

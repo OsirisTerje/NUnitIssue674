@@ -11,13 +11,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.3.0" />
+
     <PackageReference Include="Moq" Version="4.13.1" />
     <PackageReference Include="nunit" Version="3.12.0" />
-    <PackageReference Include="NUnit.Console" Version="3.10.0" />
-    <PackageReference Include="NUnit3TestAdapter" Version="3.16.0-dev-01202">
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.2.3-dbg">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+   
+    <!--<PackageReference Include="NUnit3TestAdapter" Version="3.16.0-dev-01202"/>-->
   </ItemGroup>
 
   <ItemGroup>
